@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<head>
+  <title>RoadKrome</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/css/swiper.min.css">
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/mobile-menu.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Mobile Nav -->
+  <div class="nav" style="display: none;">
+    <div class="logo">
+      <img src="images/logo-menu.svg">
+    </div>
+    <div class="main-nav">
+      <a class="hamburger-nav"></a>
+      <ul class="menu">
+        <a href="#new-collection">
+          <li><i class="fa fa-home"></i>Boots</li>
+        </a>
+        <a href="#leather-jackets">
+          <li><i class="fa fa-user"></i>Jackets</li>
+        </a>
+        <a href="#">
+          <li><i class="fa fa-file-image-o"></i>Gloves</li>
+        </a>
+        <a href="#footer">
+          <li><i class="fa fa-envelope"></i>Support</li>
+        </a>
+      </ul>
+    </div>
+  </div>
+  <!-- End Mobile Nav -->
+
+  <!-- Desktop Nav -->
+  <nav id="menu-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="#lab_video_slider">
+            <img src="images/logo.svg" class="company-logo">
+          </a>
+        </div>
+        <div class="col-sm-6">
+          <ul class="my-navbar">
+            <li><a href="#new-collection">Boots</a></li>
+            <li><a href="#leather-jackets">Jackets</a></li>
+            <li><a href="#">Gloves</a></li>
+            <li><a href="#footer">Support</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <div class="searchBar_div">
+            <button type="button" class="btn" id="search_button">
+              <i class="fa fa-search" aria-hidden="true" style="color: white;"></i>
+            </button>
+            <input type="text" class="input-box" id="search_input_box" style="display: none;width: 0%; ">
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="nav-cart">
+            <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="video-header" id="lab_video_slider">
+    <!-- Swiper -->
+    <div class="swiper-container" style="background-color: #010001;">
+      <div class="swiper-wrapper">
+        <div id="slide_one" class="swiper-slide">
+          <!-- VIDEO -->
+          <video class="slider-video" width="100%" preload="auto" loop autoplay muted style="visibility: visible; width: 100%;">
+            <source src="assets/videos/gloves.mp4" type="video/mp4">
+        </video>
+          <!-- END VIDEO -->
+        </div>
+
+        <div id="slide_two" class="swiper-slide">
+          <div id="lab_video_text_overlay">
+            <div class="container">
+
+            </div>
+          </div>
+          <!-- end #lab_overlay -->
+
+          <video class="slider-video" width="100%" preload="auto" loop autoplay muted style="visibility: visible; width: 100%;">
+            <source type="video/mp4" src="assets/videos/boots.mp4">
+          </video>
+        </div>
+
+        <div id="slide_three" class="swiper-slide">
+          <div id="lab_video_text_overlay">
+            <div class="container">
+            </div>
+          </div>
+          <!-- end #lab_overlay -->
+          <video autoplay class="slider-video" width="100%" preload="auto" loop muted style="visibility: visible; width: 100%;">
+            <source type="video/mp4" src="assets/videos/jacket.mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+
+  <!--New Collection-->
+  <section class="new-collection text-center" id="new-collection">
+    <div class="container">
+      <div class="row">
+        <div class="title-collection">
+          <span class="new-collection">new collection</span>
+          <span class="new-boots">You need to try our new boots!</span>
+        </div>
+
+        <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 collection-products">
+          <div class="product-wrapper">
+            <a href="#" target="blank"><img src="images/boot1.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+            <div class="side-text">
+              <h1 class="cart">Fusion</h1>
+            </div>
+            <div class="product-info">
+              <span class="price">$155</span>
+              <span class="cart-mobile">
+                  <h1>$155</h1>
+                  <i class="btn-icon fa fa-cart-plus"></i>
+                </span>
+            </div>
+            <div class="product-info-under">
+              <button type="button" title="Add To Cart" class="btn-add-to-cart">
+                  <span class="btn-inner">
+                    <i class="btn-icon fa fa-cart-plus"></i>
+                    <span class="btn-text">Add to cart</span>
+                  </span>
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 collection-products">
+          <div class="product-wrapper">
+            <a href="#" target="blank"><img src="images/boot2.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+            <div class="side-text">
+              <h1 class="cart">Stroker</h1>
+            </div>
+            <div class="product-info">
+              <span class="price">$120</span>
+              <span class="cart-mobile">
+                  <h1>$120</h1>
+                  <i class="btn-icon fa fa-cart-plus"></i>
+                </span>
+            </div>
+            <div class="product-info-under">
+              <button type="button" title="Add To Cart" class="btn-add-to-cart">
+                  <span class="btn-inner">
+                    <i class="btn-icon fa fa-cart-plus"></i>
+                    <span class="btn-text">Add to cart</span>
+                  </span>
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 collection-products">
+          <div class="product-wrapper">
+            <a href="#" target="blank"><img src="images/boot3.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+            <div class="side-text">
+              <h1 class="cart">Soho</h1>
+            </div>
+            <div class="product-info">
+              <span class="price">$180</span>
+              <span class="cart-mobile">
+                  <h1>$180</h1>
+                  <i class="btn-icon fa fa-cart-plus"></i>
+                </span>
+
+            </div>
+            <div class="product-info-under">
+              <button type="button" title="Add To Cart" class="btn-add-to-cart">
+                  <span class="btn-inner">
+                    <i class="btn-icon fa fa-cart-plus"></i>
+                    <span class="btn-text">Add to cart</span>
+                  </span>
+                </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="shipping" id="shipping">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-3 item">
+              <a style="text-decoration:none" href="#">
+                <span class="shipping-title"><i class="fa fa-truck shipping" aria-hidden="true"></i> FREE SHIPPING</span>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste optio at, quisquam dolore esse consequuntur tempora placeat, voluptas.
+            </div>
+
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-3 item">
+              <a style="text-decoration:none" href="#">
+                <span class="shipping-title">
+                  <i class="fa fa-credit-card-alt shipping" aria-hidden="true"></i> security payment
+                </span>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste optio at, quisquam dolore esse consequuntur tempora placeat, voluptas.
+              </p>
+            </div>
+
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-3 item">
+              <a style="text-decoration:none" href="#">
+                <span class="shipping-title">
+                  <i class="fa fa-gift shipping" aria-hidden="true"></i>Discount for gifts</span>
+                </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste optio at, quisquam dolore esse consequuntur tempora placeat, voluptas.
+              </p>
+            </div>
+
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-3 item">
+              <a style="text-decoration:none" href="#">
+                <span class="shipping-title">
+                  <i class="fa fa-motorcycle shipping" aria-hidden="true"></i> Free returns
+                </span>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste optio at, quisquam dolore esse consequuntur tempora placeat, voluptas. vitae vero hic alias ullam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--jacket-->
+  <section class="leather-jackets" id="leather-jackets">
+    <div class="container">
+      <div class="row">
+        <div class="title-collection" style="margin-top: 42px;">
+          <span class="new-collection">Rock the style</span>
+          <span class="new-boots" style="letter-spacing: 7.2px;">New leather jackets!</span>
+        </div>
+
+        <div class="col-xs-offset-1 col-sm-offset-0 col-xs-10 col-sm-4 jacket">
+          <div class="hover-background">
+            <h1 class="jacket">KANATA</h1>
+            <img src="images/jacket_banner3.png" class="img-responsive jacket">
+            <div class="product-info hidden-lg">
+              <i class="btn-icon fa fa-cart-plus"></i>
+              <span class="cart-mobile">
+                <h1>$350</h1>
+              </span>
+            </div>
+            <div class="overlay">
+              <div class="info-overlay">
+                <h2>KANATA</h2>
+                <span><a style="text-decoration:none;" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a> $350 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-offset-1 col-sm-offset-0 col-xs-10 col-sm-4 jacket">
+          <div class="hover-background">
+            <h1 class="jacket">VANICE</h1>
+            <img src="images/jacket_banner2.png" class="img-responsive jacket">
+            <div class="product-info  hidden-lg">
+              <i class="btn-icon fa fa-cart-plus"></i>
+              <span class="cart-mobile">
+                <h1>$250</h1>
+              </span>
+            </div>
+            <div class="overlay">
+              <div class="info-overlay">
+                <h2>VANICE</h2>
+                <span><a style="text-decoration:none;" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a> $250 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-offset-1 col-sm-offset-0 col-xs-10 col-sm-4 jacket">
+          <div class="hover-background">
+            <h1 class="jacket">LANGFORD</h1>
+            <img src="images/jacket_banner4.png" class="img-responsive jacket">
+            <div class="product-info hidden-lg">
+              <i class="btn-icon fa fa-cart-plus"></i>
+              <span class="cart-mobile">
+                <h1>$299</h1>
+              </span>
+            </div>
+            <div class="overlay">
+              <div class="info-overlay">
+                <h2>LANGFORD</h2>
+                <span><a style="text-decoration:none;" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> $299 </a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--newsletter  -->
+  <section class="newsletter" id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>NEWSLETTER</h1>
+        </div>
+        <div class="col-xs-12">
+          <div class="newsletter-form">
+            <input type="text" class="newsletter-input" placeholder="Subscribe your email here!">
+            <button type="button" class="newsletter-button">Subscribe</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-lg-11">
+          <div class="footer-info-contact">
+            <h1>CONTACT INFO</h1>
+            <ul>
+              <li>
+                <i class="fa fa-map-marker"></i>
+                123 Sky Tower Blvd<br />Beverly Hills, California<br />90210
+              </li>
+              <li>
+                <i class="fa fa-phone"></i>
+                555-555-1234
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:info@roadkrome.com">info@roadkrome.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-info">
+            <h1>ORDER TRACKING</h1>
+            <ul class="footer-inner">
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">RETURNS</a></li>
+              <li><a href="#">CONTACT US</a></li>
+              <li><a href="#">TERMS AND CONDITIONS</a></li>
+              <li><a href="#">PRIVACY POLICY</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/js/swiper.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
